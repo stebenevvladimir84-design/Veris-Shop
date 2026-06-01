@@ -123,6 +123,29 @@
             
             <div class="card item">
                 <div class="slider-container">
+                    <img src="images/cdgb/cdgb.webp" class="slider-img active">
+                    <img src="images/cdgb/cdgb_2.webp" class="slider-img">
+                    <img src="images/cdgb/cdgb_3.webp" class="slider-img">
+                    <button class="nav-btn prev" onclick="moveSlide(this, -1)">❮</button>
+                    <button class="nav-btn next" onclick="moveSlide(this, 1)">❯</button>
+                    <div class="dots-container">
+                        <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+                    </div>
+                </div>
+                <h3>Футболка Comme Des Garcons</h3>
+                <div class="sizes">
+                    <span class="size-tag active" onclick="selectSize(this, 29990)">XS</span>
+                    <span class="size-tag" onclick="selectSize(this, 29990)">S</span>
+                    <span class="size-tag" onclick="selectSize(this, 29990)">M</span>
+                    <span class="size-tag" onclick="selectSize(this, 29990)">L</span>
+                    <span class="size-tag" onclick="selectSize(this, 29990)">XL</span>
+                </div>
+                <p class="price">29 990 ₸</p>
+                <div class="btn-order" onclick="orderWithSize(this)">ЗАКАЗАТЬ</div>
+            </div>
+
+            <div class="card item">
+                <div class="slider-container">
                     <img src="images/orig.webp" alt="Шорты" class="slider-img active">
                 </div>
                 <h3>Шорты Sprayground</h3>
@@ -145,4 +168,5 @@
         function searchItems() { let input = document.getElementById('searchBar').value.toLowerCase(); document.querySelectorAll('.card.item').forEach(c => { c.style.display = c.innerText.toLowerCase().includes(input) ? "flex" : "none"; }); }
     </script>
 </body>
+</html>
 </html>
