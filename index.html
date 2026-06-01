@@ -53,7 +53,6 @@
         .nav-btn:hover { background: rgba(0, 0, 0, 0.9); border-color: #fff; }
         .prev { left: 10px; } .next { right: 10px; }
         
-        .card h3 { margin-bottom: 15px; }
         .sizes { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 15px; }
         .size-tag { padding: 4px 8px; border: 1px solid #333; color: #444; font-size: 0.7rem; text-transform: uppercase; cursor: pointer; transition: 0.3s; }
         .card:hover .size-tag.active { border: 1px solid #fff; color: #fff; background: #222; }
@@ -78,10 +77,11 @@
 
     <section id="catalog" class="screen animate">
         <button class="btn-back" onclick="showScreen('hero')">←</button>
-        <h2 class="catalog-header">КАТАЛОГ</h2>
-        <div class="search-box">
-            <input type="text" id="searchBar" placeholder="Поиск товаров..." onkeyup="searchItems()">
-        </div>
+       <h2 class="catalog-header">КАТАЛОГ</h2>
+            <p style="text-align: center; font-size: 0.8rem; color: #888; margin-bottom: 20px;">* Цены могут меняться, для уточнения актуальной стоимости напишите нам</p>
+            <div class="search-box">
+                <input type="text" id="searchBar" placeholder="Поиск товаров..." onkeyup="searchItems()">
+            </div>
 
         <div class="tabs">
             <button class="tab-btn active" onclick="filter('all', this)">Все товары</button>
@@ -146,7 +146,7 @@
                 <div class="btn-order" onclick="orderWithSize(this)">ЗАКАЗАТЬ</div>
             </div>
 
-            <!-- Поло Champion -->
+<!-- Поло Champion -->
             <div class="card item">
                 <div class="slider-container">
                     <img src="images/champion1/champion1.webp" class="slider-img active">
@@ -166,6 +166,32 @@
                     <span class="size-tag" onclick="selectSize(this, 20990)">XXL</span>
                 </div>
                 <p class="price">20 990 ₸</p>
+                <div class="btn-order" onclick="orderWithSize(this)">ЗАКАЗАТЬ</div>
+            </div>
+
+<!-- Футболка Jordan -->
+            <div class="card item">
+                <div class="slider-container">
+                    <img src="images/jordant/jordant.webp" class="slider-img active">
+                    <img src="images/jordant/jordant_2.webp" class="slider-img">
+                    <img src="images/jordant/jordant_3.webp" class="slider-img">
+                    <img src="images/jordant/jordant_4.webp" class="slider-img">
+                    <button class="nav-btn prev" onclick="moveSlide(this, -1)">❮</button>
+                    <button class="nav-btn next" onclick="moveSlide(this, 1)">❯</button>
+                    <div class="dots-container">
+                        <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                    </div>
+                </div>
+                <h3>Футболка Jordan</h3>
+                <div class="sizes">
+                    <span class="size-tag active" onclick="selectSize(this, 14990)">S</span>
+                    <span class="size-tag" onclick="selectSize(this, 14990)">M</span>
+                    <span class="size-tag" onclick="selectSize(this, 19990)">L</span>
+                    <span class="size-tag" onclick="selectSize(this, 24990)">XL</span>
+                    <span class="size-tag" onclick="selectSize(this, 24990)">XXL</span>
+                    <span class="size-tag" onclick="selectSize(this, 24990)">XXXL</span>
+                </div>
+                <p class="price">14 990 ₸</p>
                 <div class="btn-order" onclick="orderWithSize(this)">ЗАКАЗАТЬ</div>
             </div>
 
@@ -193,5 +219,4 @@
         function searchItems() { let input = document.getElementById('searchBar').value.toLowerCase(); document.querySelectorAll('.card.item').forEach(c => { c.style.display = c.innerText.toLowerCase().includes(input) ? "flex" : "none"; }); }
     </script>
 </body>
-</html>
 </html>
