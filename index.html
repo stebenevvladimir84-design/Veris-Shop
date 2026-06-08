@@ -384,12 +384,11 @@
                 </div>
                 <h3>Джинсы Levi's 511</h3>
                 <div class="sizes">
-                    <span class="size-tag active" onclick="selectSize(this, 34990)">S</span>
-                    <span class="size-tag" onclick="selectSize(this, 34990)">S/M</span>
-                    <span class="size-tag" onclick="selectSize(this, 34990)">M</span>
-                    <span class="size-tag" onclick="selectSize(this, 34990)">M/L</span>
-                    <span class="size-tag" onclick="selectSize(this, 34990)">L</span>
-                    <span class="size-tag" onclick="selectSize(this, 34990)">XL</span>
+                    <span class="size-tag active" onclick="selectSize(this, 34990)">30</span>
+                    <span class="size-tag" onclick="selectSize(this, 34990)">31</span>
+                    <span class="size-tag" onclick="selectSize(this, 34990)">32</span>
+                    <span class="size-tag" onclick="selectSize(this, 34990)">34</span>
+                    <span class="size-tag" onclick="selectSize(this, 34990)">36</span>
                 </div>
                 <p class="price">34 990 ₸</p>
                 <div class="btn-order" onclick="orderWithSize(this)">ЗАКАЗАТЬ</div>
@@ -444,7 +443,7 @@
                 <div class="btn-order" onclick="orderWithSize(this)">ЗАКАЗАТЬ</div>
             </div>
 
-            <!-- Худи Sprayground -->
+<!-- Худи Sprayground -->
             <div class="card item">
                 <div class="slider-container">
                     <img src="images/spraygroundh/spraygroundh.webp" class="slider-img active">
@@ -468,6 +467,56 @@
                     <span class="size-tag" onclick="selectSize(this, 26990)">XXL</span>
                 </div>
                 <p class="price">26 990 ₸</p>
+                <div class="btn-order" onclick="orderWithSize(this)">ЗАКАЗАТЬ</div>
+            </div>
+
+<!-- Поло AAPE -->
+            <div class="card item">
+                <div class="slider-container">
+                    <img src="images/aapep/aapep.webp" class="slider-img active">
+                    <img src="images/aapep/aapep_2.webp" class="slider-img">
+                    <button class="nav-btn prev" onclick="moveSlide(this, -1)">❮</button>
+                    <button class="nav-btn next" onclick="moveSlide(this, 1)">❯</button>
+                    <div class="dots-container">
+                        <span class="dot active"></span><span class="dot"></span>
+                    </div>
+                </div>
+                <h3>Поло AAPE</h3>
+                <div class="sizes">
+                    <span class="size-tag active" onclick="selectSize(this, 34990)">S</span>
+                    <span class="size-tag" onclick="selectSize(this, 34990)">M</span>
+                    <span class="size-tag" onclick="selectSize(this, 34990)">L</span>
+                    <span class="size-tag" onclick="selectSize(this, 34990)">XL</span>
+                    <span class="size-tag" onclick="selectSize(this, 34990)">XXL</span>
+                </div>
+                <p class="price">34 990 ₸</p>
+                <div class="btn-order" onclick="orderWithSize(this)">ЗАКАЗАТЬ</div>
+            </div>
+
+<!-- Шорты Jordan -->
+            <div class="card item">
+                <div class="slider-container">
+                    <img src="images/jordans/jordans.webp" class="slider-img active">
+                    <img src="images/jordans/jordans_2.webp" class="slider-img">
+                    <img src="images/jordans/jordans_3.webp" class="slider-img">
+                    <img src="images/jordans/jordans_4.webp" class="slider-img">
+                    <img src="images/jordans/jordans_5.webp" class="slider-img">
+                    <button class="nav-btn prev" onclick="moveSlide(this, -1)">❮</button>
+                    <button class="nav-btn next" onclick="moveSlide(this, 1)">❯</button>
+                    <div class="dots-container">
+                        <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                    </div>
+                </div>
+                <h3>Шорты Jordan</h3>
+                <div class="sizes">
+                    <span class="size-tag active" onclick="selectSize(this, 20990)">XS</span>
+                    <span class="size-tag" onclick="selectSize(this, 20990)">S</span>
+                    <span class="size-tag" onclick="selectSize(this, 20990)">M</span>
+                    <span class="size-tag" onclick="selectSize(this, 20990)">L</span>
+                    <span class="size-tag" onclick="selectSize(this, 29990)">XL</span>
+                    <span class="size-tag" onclick="selectSize(this, 24990)">XXL</span>
+                </div>
+                <p class="price">20 990 ₸</p>
                 <div class="btn-order" onclick="orderWithSize(this)">ЗАКАЗАТЬ</div>
             </div>
 
@@ -495,4 +544,5 @@
         function searchItems() { let input = document.getElementById('searchBar').value.toLowerCase(); document.querySelectorAll('.card.item').forEach(c => { c.style.display = c.innerText.toLowerCase().includes(input) ? "flex" : "none"; }); }
     </script>
 </body>
+</html>
 </html>
