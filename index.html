@@ -520,16 +520,38 @@
                 <div class="btn-order" onclick="orderWithSize(this)">ЗАКАЗАТЬ</div>
             </div>
 
-            <div class="card item">
+<div class="card item">
                 <div class="slider-container">
-                    <img src="images/orig.webp" alt="Шорты" class="slider-img active">
+                    <img src="images/crocsg/crocsg.webp" class="slider-img active">
+                    <img src="images/crocsg/crocsg_2.webp" class="slider-img">
+                    <img src="images/crocsg/crocsg_3.webp" class="slider-img">
+                    <img src="images/crocsg/crocsg_4.webp" class="slider-img">
+                    <img src="images/crocsg/crocsg_5.webp" class="slider-img">
+                    <img src="images/crocsg/crocsg_6.webp" class="slider-img">
+                    <button class="nav-btn prev" onclick="moveSlide(this, -1)">❮</button>
+                    <button class="nav-btn next" onclick="moveSlide(this, 1)">❯</button>
+                    <div class="dots-container">
+                        <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                    </div>
                 </div>
-                <h3>Шорты Sprayground</h3>
-                <div class="sizes"><span class="size-tag active" onclick="selectSize(this, 19990)">S</span></div>
-                <p class="price">19 990 ₸</p>
+                <h3>Crocs Geometric</h3>
+                <div class="sizes">
+                    <span class="size-tag active" onclick="selectSize(this, 28990)">34-35</span>
+                    <span class="size-tag" onclick="selectSize(this, 28990)">35-36</span>
+                    <span class="size-tag" onclick="selectSize(this, 28990)">36-37</span>
+                    <span class="size-tag" onclick="selectSize(this, 28990)">37-38</span>
+                    <span class="size-tag" onclick="selectSize(this, 28990)">38-39</span>
+                    <span class="size-tag" onclick="selectSize(this, 28990)">39-40</span>
+                    <span class="size-tag" onclick="selectSize(this, 28990)">40-41</span>
+                    <span class="size-tag" onclick="selectSize(this, 28990)">41-42</span>
+                    <span class="size-tag" onclick="selectSize(this, 33990)">42-43</span>
+                    <span class="size-tag" onclick="selectSize(this, 33990)">43-44</span>
+                    <span class="size-tag" onclick="selectSize(this, 33990)">44-45</span>
+                    <span class="size-tag" onclick="selectSize(this, 33990)">45-46</span>
+                </div>
+                <p class="price">28 990 ₸</p>
                 <div class="btn-order" onclick="orderWithSize(this)">ЗАКАЗАТЬ</div>
             </div>
-        </div>
 
         <div id="stock" class="content-group"></div>
         <div id="soon" class="content-group"></div>
@@ -544,5 +566,4 @@
         function searchItems() { let input = document.getElementById('searchBar').value.toLowerCase(); document.querySelectorAll('.card.item').forEach(c => { c.style.display = c.innerText.toLowerCase().includes(input) ? "flex" : "none"; }); }
     </script>
 </body>
-</html>
 </html>
